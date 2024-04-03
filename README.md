@@ -10,14 +10,14 @@ The following are mandatory:
    - Name
    - PersianName
    - CountryCode
-   - Status: Active/Deactive
+   - Status: Active/Deactivate
    - IsDeleted: True/False
 
 2. The city table must include the following columns:
    - Name
    - PersianName
    - CityCode
-   - Status: Active/Deactive
+   - Status: Active/Deactivate
    - IsDeleted: True/False
    - Type: Urban - Rural - SmallCity
 
