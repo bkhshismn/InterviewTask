@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Enums\Enums.csproj" />
-    <ProjectReference Include="..\PublicService\PublicService.csproj" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.13" />
   </ItemGroup>
 
 </Project>
