@@ -43,6 +43,6 @@ The following are optional:
 3. The use of a service is considered an advantage.
 
 4. Creating a Docker file and providing a Docker image file is considered an advantage.
+------------------------------------------------------------------------------------------------------
 
-
-Happy Code
+Happy Code :-)
