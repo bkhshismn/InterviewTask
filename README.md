@@ -1,7 +1,7 @@
 Task Interview
 ------------------------------------------------------------------------------------------------------
 Implement CRUD operations for two tables, country and city, in code first approach.
-
+------------------------------------------------------------------------------------------------------
 
 
 The following are mandatory:
@@ -20,16 +20,15 @@ The following are mandatory:
    - Status: Active/Deactivate
    - IsDeleted: True/False
    - Type: Urban - Rural - SmallCity
+   - CountryId: Foreign key Relation To Country 
 
 3. Each country can have multiple cities.
 
 4. It is not possible to register a city for inactive countries.
 
-5. It should be possible to edit each column of the tables without sending the remaining columns.
+5. Deletion should occur in two ways: complete deletion or setting the "isDeleted" field to true.
 
-6. Deletion should occur in two ways: complete deletion or setting the "isDeleted" field to true.
-
-7. Upload the project to GitHub and send the repository link to kalanaki@pendarpajouh.com
+6. Upload the project to GitHub and send the repository link to kalanaki@pendarpajouh.com
 ------------------------------------------------------------------------------------------------------
 
 
@@ -43,6 +42,10 @@ The following are optional:
 3. The use of a service is considered an advantage.
 
 4. Creating a Docker file and providing a Docker image file is considered an advantage.
+
+5. It should be possible to edit each column of the tables without sending the remaining columns.
 ------------------------------------------------------------------------------------------------------
+
+
 
 Happy Code :-)
