@@ -29,7 +29,7 @@ The following are mandatory:
 
 6. Deletion should occur in two ways: complete deletion or setting the "isDeleted" field to true.
 
-7- Upload the project to GitHub and send the repository link to kalanaki@pendarpajouh.com
+7. Upload the project to GitHub and send the repository link to kalanaki@pendarpajouh.com
 ------------------------------------------------------------------------------------------------------
 
 
