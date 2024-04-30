@@ -72,9 +72,11 @@ public class DatabaseContext : DbContext
 		(DbContextOptionsBuilder optionsBuilder)
 	{
 		var connectionString =
-		"Server=.,1433;User ID=username;Password=password;Database=PharmacyDB;MultipleActiveResultSets=true;TrustServerCertificate=True;";
+		//"Server=.,1433;User ID=username;Password=password;Database=PharmacyDB;MultipleActiveResultSets=true;TrustServerCertificate=True;";
+        "Server=.;Database=PharmacyDB;MultipleActiveResultSets=true;TrustServerCertificate=True;";
 
-		optionsBuilder.UseSqlServer
+
+        optionsBuilder.UseSqlServer
 			(connectionString: connectionString);
 	}
 

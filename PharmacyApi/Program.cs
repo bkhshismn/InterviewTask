@@ -1,11 +1,17 @@
 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using PharmacyApi.DataContext;
+using PharmacyApi.Services;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<PharmacyContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddCors();
+builder.Services.AddScoped<ICountryService, CountryService>();
+builder.Services.AddScoped<ICityService, CityService>();
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
@@ -59,5 +65,11 @@ app.UseAuthorization();
 app.UseStaticFiles();
 
 app.MapControllers();
+
+//using (IServiceScope scope = app.Services.CreateAsyncScope())
+//{
+//    var context = scope.ServiceProvider.GetService<PharmacyContext>();
+//    await context.Database.MigrateAsync();
+//}
 
 app.Run();
